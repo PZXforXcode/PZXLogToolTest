@@ -1,0 +1,2 @@
+# PZXLogToolTest
+iOS项目日志查看方案Demo，用了CocoaDebug和CocoaLumberjack+LumberjackConsole 2种方案
