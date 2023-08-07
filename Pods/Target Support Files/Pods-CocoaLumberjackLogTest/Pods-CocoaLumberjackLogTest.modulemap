@@ -1,0 +1,6 @@
+framework module Pods_CocoaLumberjackLogTest {
+  umbrella header "Pods-CocoaLumberjackLogTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

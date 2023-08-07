@@ -1,0 +1,41 @@
+PODS:
+  - CocoaDebug (1.7.7)
+  - CocoaLumberjack (3.8.0):
+    - CocoaLumberjack/Core (= 3.8.0)
+  - CocoaLumberjack/Core (3.8.0)
+  - CocoaLumberjack/Swift (3.8.0):
+    - CocoaLumberjack/Core
+  - FLEX (5.22.10)
+  - LumberjackConsole (3.6.0):
+    - CocoaLumberjack (>= 3.x)
+    - NBUCore (>= 2.1.0)
+  - NBUCore (2.1.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - CocoaDebug
+  - CocoaLumberjack/Swift
+  - FLEX
+  - LumberjackConsole
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - CocoaDebug
+    - CocoaLumberjack
+    - FLEX
+    - LumberjackConsole
+    - NBUCore
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CocoaDebug: b38d31464b91a9775928f8667d114db07b136565
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
+  LumberjackConsole: fd454c900893c83ca8f3dc0248a705b9634850d1
+  NBUCore: 201af50441f48513ef6d5823a5fc12c9e1f288cd
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 67b44b7c261b91a67fecd2259f056b9c49e90fb5
+
+COCOAPODS: 1.12.1
