@@ -13,13 +13,15 @@
 		899CB2C32A808B2700DD65E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899CB2C12A808B2700DD65E0 /* Main.storyboard */; };
 		899CB2C52A808B2800DD65E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899CB2C42A808B2800DD65E0 /* Assets.xcassets */; };
 		899CB2C82A808B2800DD65E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899CB2C62A808B2800DD65E0 /* LaunchScreen.storyboard */; };
-		F5AAAE37A4A46998EB09C391 /* Pods_CocoaLumberjackLogTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811DDAF0EACA7F3E0BB66A35 /* Pods_CocoaLumberjackLogTest.framework */; };
+		DF38869650A446C127A1620D /* Pods_PZXLogToolTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43105EDE45C2EE41C95BE40E /* Pods_PZXLogToolTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43105EDE45C2EE41C95BE40E /* Pods_PZXLogToolTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZXLogToolTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		503BFCACFD6973B1B192A7AB /* Pods-CocoaLumberjackLogTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaLumberjackLogTest.debug.xcconfig"; path = "Target Support Files/Pods-CocoaLumberjackLogTest/Pods-CocoaLumberjackLogTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5426BDD9E5B1BC3DB87C58A6 /* Pods-PZXLogToolTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZXLogToolTest.debug.xcconfig"; path = "Target Support Files/Pods-PZXLogToolTest/Pods-PZXLogToolTest.debug.xcconfig"; sourceTree = "<group>"; };
 		71A5CBF60EA57C78D5F1518A /* Pods-CocoaLumberjackLogTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaLumberjackLogTest.release.xcconfig"; path = "Target Support Files/Pods-CocoaLumberjackLogTest/Pods-CocoaLumberjackLogTest.release.xcconfig"; sourceTree = "<group>"; };
-		811DDAF0EACA7F3E0BB66A35 /* Pods_CocoaLumberjackLogTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaLumberjackLogTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3C501064557DB7007280D1 /* Pods-PZXLogToolTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZXLogToolTest.release.xcconfig"; path = "Target Support Files/Pods-PZXLogToolTest/Pods-PZXLogToolTest.release.xcconfig"; sourceTree = "<group>"; };
 		899CB2B82A808B2700DD65E0 /* PZXLogToolTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZXLogToolTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		899CB2BB2A808B2700DD65E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		899CB2BD2A808B2700DD65E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5AAAE37A4A46998EB09C391 /* Pods_CocoaLumberjackLogTest.framework in Frameworks */,
+				DF38869650A446C127A1620D /* Pods_PZXLogToolTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +47,7 @@
 		7F2B0619307BED34EB8A2DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				811DDAF0EACA7F3E0BB66A35 /* Pods_CocoaLumberjackLogTest.framework */,
+				43105EDE45C2EE41C95BE40E /* Pods_PZXLogToolTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,6 +89,8 @@
 			children = (
 				503BFCACFD6973B1B192A7AB /* Pods-CocoaLumberjackLogTest.debug.xcconfig */,
 				71A5CBF60EA57C78D5F1518A /* Pods-CocoaLumberjackLogTest.release.xcconfig */,
+				5426BDD9E5B1BC3DB87C58A6 /* Pods-PZXLogToolTest.debug.xcconfig */,
+				7E3C501064557DB7007280D1 /* Pods-PZXLogToolTest.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -175,7 +179,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CocoaLumberjackLogTest-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PZXLogToolTest-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -188,15 +192,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CocoaLumberjackLogTest/Pods-CocoaLumberjackLogTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PZXLogToolTest/Pods-PZXLogToolTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CocoaLumberjackLogTest/Pods-CocoaLumberjackLogTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PZXLogToolTest/Pods-PZXLogToolTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaLumberjackLogTest/Pods-CocoaLumberjackLogTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PZXLogToolTest/Pods-PZXLogToolTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -350,7 +354,7 @@
 		};
 		899CB2CD2A808B2900DD65E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 503BFCACFD6973B1B192A7AB /* Pods-CocoaLumberjackLogTest.debug.xcconfig */;
+			baseConfigurationReference = 5426BDD9E5B1BC3DB87C58A6 /* Pods-PZXLogToolTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,7 +383,7 @@
 		};
 		899CB2CE2A808B2900DD65E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71A5CBF60EA57C78D5F1518A /* Pods-CocoaLumberjackLogTest.release.xcconfig */;
+			baseConfigurationReference = 7E3C501064557DB7007280D1 /* Pods-PZXLogToolTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

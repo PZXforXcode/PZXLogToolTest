@@ -70,11 +70,14 @@ class ViewController: UIViewController {
     ///[CocoaLumberjack]+[LumberjackConsole]的日志方案
     fileprivate func CocoaLumberjackFun() {
         // Do any additional setup after loading the view.
+        let customFormatter = MyCustomLogFormatter()
         DDLog.add(DDOSLogger.sharedInstance) // Uses os_log
-        
+        DDOSLogger.sharedInstance.logFormatter = customFormatter
+
         let fileLogger: DDFileLogger = DDFileLogger() // File Logger
         fileLogger.rollingFrequency = 60 * 60 * 24 // 24 hours
         fileLogger.logFileManager.maximumNumberOfLogFiles = 7
+        fileLogger.logFormatter = customFormatter
         DDLog.add(fileLogger)
         
         //logs文件夹路径
@@ -98,5 +101,27 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+
+class MyCustomLogFormatter: NSObject, DDLogFormatter {
+    
+    func format(message logMessage: DDLogMessage) -> String? {
+        let logLevel: String
+        switch logMessage.flag {
+        case .verbose: logLevel = "VERBOSE"
+        case .debug: logLevel = "DEBUG"
+        case .info: logLevel = "INFO"
+        case .warning: logLevel = "WARN"
+        case .error: logLevel = "ERROR"
+        default: logLevel = "UNKNOWN"
+        }
+        
+        let file = logMessage.file as NSString
+        let fileName = file.lastPathComponent
+        let lineNumber = logMessage.line
+        
+        return "\(logLevel) - [\(fileName):\(lineNumber)] \(logMessage.message)"
+    }
 }
 

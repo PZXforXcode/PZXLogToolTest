@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CocoaLumberjackLogTestVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CocoaLumberjackLogTestVersionString[];
+FOUNDATION_EXPORT double Pods_PZXLogToolTestVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_PZXLogToolTestVersionString[];
 

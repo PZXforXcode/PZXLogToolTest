@@ -4,7 +4,7 @@ FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaDebu
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaDebug/CocoaDebug.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FLEX/FLEX.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/LumberjackConsole/LumberjackConsole.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NBUCore/NBUCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
-LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
 OTHER_LDFLAGS = $(inherited) -l"stdc++" -framework "CocoaDebug" -framework "CocoaLumberjack" -framework "CoreGraphics" -framework "FLEX" -framework "Foundation" -framework "ImageIO" -framework "JavaScriptCore" -framework "LumberjackConsole" -framework "NBUCore" -framework "QuartzCore" -framework "QuickLook" -framework "SceneKit" -framework "Security" -framework "SnapKit" -framework "UIKit" -framework "WebKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
